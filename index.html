@@ -705,8 +705,27 @@ footer p {
   <div class="section-label reveal">// Ready to Start?</div>
   <h2 class="section-title reveal">LET'S GET YOUR<br/>BUSINESS ONLINE</h2>
   <p class="reveal">Free quote. No pressure. Just tell us about your business and we'll take it from there.</p>
-  <!-- REPLACE the href below with your actual Stripe payment link -->
-  <a href="https://buy.stripe.com/YOUR_STRIPE_LINK_HERE" class="cta-big reveal">Get a Free Quote →</a>
+ <a href="#quote-form" class="cta-big reveal">Get a Free Quote →</a>
+
+<div id="quote-form" style="max-width:560px;margin:48px auto 0;text-align:left;">
+  <form action="https://formsubmit.co/will.port016@gmail.com" method="POST" style="display:flex;flex-direction:column;gap:16px;">
+    <input type="hidden" name="_subject" value="New Quote Request - Will Virtual Tech"/>
+    <input type="hidden" name="_captcha" value="false"/>
+    <input type="hidden" name="_next" value="https://willvirtualtech.github.io"/>
+    <input type="text" name="name" placeholder="Your Name" required style="background:#111;border:1px solid #222;color:#f5f0e8;padding:14px 18px;border-radius:4px;font-family:'DM Sans',sans-serif;font-size:15px;outline:none;"/>
+    <input type="tel" name="phone" placeholder="Your Phone Number" required style="background:#111;border:1px solid #222;color:#f5f0e8;padding:14px 18px;border-radius:4px;font-family:'DM Sans',sans-serif;font-size:15px;outline:none;"/>
+    <input type="text" name="business" placeholder="Business Name" required style="background:#111;border:1px solid #222;color:#f5f0e8;padding:14px 18px;border-radius:4px;font-family:'DM Sans',sans-serif;font-size:15px;outline:none;"/>
+    <select name="package" required style="background:#111;border:1px solid #222;color:#f5f0e8;padding:14px 18px;border-radius:4px;font-family:'DM Sans',sans-serif;font-size:15px;outline:none;">
+      <option value="" disabled selected>Which package are you interested in?</option>
+      <option value="Starter - $299">Starter Site — $299</option>
+      <option value="Business - $599">Business Site — $599</option>
+      <option value="Premium - $999">Premium Site — $999</option>
+      <option value="Not sure">Not sure yet</option>
+    </select>
+    <textarea name="message" placeholder="Tell me about your business..." rows="4" style="background:#111;border:1px solid #222;color:#f5f0e8;padding:14px 18px;border-radius:4px;font-family:'DM Sans',sans-serif;font-size:15px;outline:none;resize:vertical;"></textarea>
+    <button type="submit" style="background:#00e5a0;color:#080808;padding:16px;border:none;border-radius:4px;font-family:'DM Sans',sans-serif;font-weight:700;font-size:16px;cursor:pointer;">Send My Quote Request →</button>
+  </form>
+</div>
   <p class="cta-note reveal">Or text/call us directly to talk about your project</p>
 </div>
 
